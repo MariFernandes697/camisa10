@@ -1,5 +1,13 @@
 <!-- 
     E-commerce planning
+    
+    Fontes:
+    Poppins, sans serif
+
+    Cores:
+    --corfundo: #050131;
+    --cordestaque: #e21010;
+
 
     Landing page.
     Menu -  barra de navegação, area do usuario, carrinho, logo, menu suspenso, responsividade.
