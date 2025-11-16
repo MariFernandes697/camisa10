@@ -1,0 +1,29 @@
+:root{
+    --corfundo: #050131;
+    --cordestaque: #b90d0d;
+}
+.banner{
+    margin-top: 70px;   
+    background-image: url('../assets/banners/bannerMain.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;      
+    padding-top: 70px;
+}
+.banner .linha{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+.banner .col-2{
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+.banner .imagem-banner img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 0;
+}

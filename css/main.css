@@ -47,7 +47,7 @@ header.header > nav{
     /* padding interno se quiser espaço lateral dentro do container */
     padding-bottom: 30px;
 }
-.produtos >.titulo-produtos h1{
+.produtos >.titulo-produtos h1, .titulo-produtos h1{
     color: var(--corfundo);
     font-weight: 700;
     text-shadow: 0 0 1px #050131b9;
@@ -56,19 +56,23 @@ header.header > nav{
 }
 .produtos >.cards > .card{
     width:300px;
-    height: 400px;
+    height: 390px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border: 1px solid #5b5b5b;
-    box-shadow: 0px 0px 4px #828282;
+    border-radius: 5px;
+    box-shadow: 0px 0px .5px #828282;
+    transition: transform .5s;
 }
+.produtos >.cards > .card:hover{
+    transform: scale(1.05);
+}
+
 .produtos >.cards .card h4{
     font-weight: 600;
 }
 section.produtos >.cards .card >button{
     padding: 10px 20px;
-    background-color: var(--cordestaque);
+    background-color: var(--corfundo);
     color: #fff;
     font-weight: 500;
     border-radius: 10px;
@@ -76,6 +80,7 @@ section.produtos >.cards .card >button{
 section.produtos >.cards .card >button a{
     text-decoration: none;
 }
+
 footer{
     background-color: var(--corfundo);
     width: 100%;

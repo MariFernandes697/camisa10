@@ -40,3 +40,5 @@
   busca.addEventListener("input", filtrar);
   categoria.addEventListener("change", filtrar);
   preco.addEventListener("change", filtrar);
+
+  
