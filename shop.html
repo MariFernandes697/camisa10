@@ -78,7 +78,8 @@
 
     </header>
     <main>
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Banners | Carrossel de promoções -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -107,10 +108,10 @@
             <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
-            </div>
+        </div>
 
-            <!-- Categorias -->
-             <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+        <!-- Categorias -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top categorias">
 
             <ul class="navbar-nav">
 
@@ -643,8 +644,138 @@
                 </li>
             </ul>
 
-         </nav>
-        
+        </nav>
+        <!-- Card produtos -->
+        <section class="produtos container my-5">
+            <div class="titulo-produtos">
+                <h1>Todos os produtos</h1>
+            </div>
+            <!-- Filtros de pesquisa -->
+             <aside class="filtros-laterais">
+            <div class="filtros container mb-4">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="filtroBusca" placeholder="Filtrar">
+                    </div>
+                    <div class="col-md-3">
+                        <select id="filtroCategoria" class="form-select">
+                            <option value="">Categoria</option>
+                            <option value="">Vestuario</option>
+                            <option value="">Calçados</option>
+                            <option value="">Acessórios</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select id="filtroPreco" class="form-select">
+                        <option value="">Preço</option>
+                        <option value="0-100">Até R$ 100</option>
+                        <option value="100-200">R$ 100 a R$ 200</option>
+                        <option value="200-99999">Acima de R$ 200</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </aside>
+            <!-- Produtos -->
+             <div class="cards">
+                 <div class="card" data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/12.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/14.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/16.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/9.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/18.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/20.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/22.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 <div class="card"  data-nome="camiseta" data-categoria="vestuario" data-preco="149.90">
+                    <div class="img-produto">
+                        <img src="assets/produtos/24.png" alt="">
+                    </div>
+                    <h3>Nome do produto</h3>
+                    <h6>Breve descrição aa a</h6>
+                    <p>Preço</p>
+                    <button><a>Ver mais</a></button>
+                 </div>
+
+                 
+             </div>
+             
+        </section>
     </main>
+        <footer>
+            <img src="assets/img/6.png" alt="" width="150px">
+            <div class="direitos-autorais">
+                <img src="assets/img/Camisa10.png" alt="" width="100px">
+            </div>
+            <p>Tads 2 | &copy;Instituto Federal do Paraná</p>
+            <div class="redes-sociais">
+                <h5>Nossas redes sociais</h5>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+            </div>
+        </footer>
+<script src="shop.js"></script>
 </body>
 </html>

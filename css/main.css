@@ -5,7 +5,7 @@
 }
 :root{
     --corfundo: #050131;
-    --cordestaque: #e21010;
+    --cordestaque: #b90d0d;
     
 }
 header.header > nav{
@@ -31,11 +31,75 @@ header.header > nav{
     font-size: 1.1em;
     font-weight: 700;
 }
-.produtos{
-    padding: 40px;
+.categorias{
+    background-color: #b90d0d;
 }
-.produtos h1{
+
+.produtos{
+    padding: 30px;
+}
+.produtos > .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center; /* centraliza a grade */
+    align-items: stretch;
+    /* padding interno se quiser espaço lateral dentro do container */
+    padding-bottom: 30px;
+}
+.produtos >.titulo-produtos h1{
     color: var(--corfundo);
     font-weight: 700;
     text-shadow: 0 0 1px #050131b9;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.produtos >.cards > .card{
+    width:300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #5b5b5b;
+    box-shadow: 0px 0px 4px #828282;
+}
+.produtos >.cards .card h4{
+    font-weight: 600;
+}
+section.produtos >.cards .card >button{
+    padding: 10px 20px;
+    background-color: var(--cordestaque);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+section.produtos >.cards .card >button a{
+    text-decoration: none;
+}
+footer{
+    background-color: var(--corfundo);
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b5b5b;
+    gap: 60px;
+}
+footer p{
+    margin-top: 10px;
+    font-weight: 600;
+    color: #e21010;
+}
+footer> .redes-sociais{
+    font-size: 30px;
+    line-height: 10px;
+    transform: color .5s;
+}
+footer> .redes-sociais i{
+    transition: color .5s;
+    padding: 10px;
+}
+footer> .redes-sociais i:hover{
+    color: #fff;
 }
