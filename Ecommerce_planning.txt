@@ -40,7 +40,7 @@
     
     icons bootstrap
     <i class="bi bi-cart-plus-fill"></i> carrinho
-    <i class="bi bi-person-fill"></i> user
+    <i class="bi bi-person-circle"></i> user
     <i class="bi bi-eye-fill"></i> say password
     <i class="bi bi-search"></i> search
     -->
