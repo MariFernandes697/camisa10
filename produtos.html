@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/menu-rodape.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <title>Camisa 10</title>
+</head>
+<body>
+    <!-- CABEÇALHO DA PÁGINA-->
+    <header>
+        <!-- MENU -->
+        <nav>
+            <!-- Logo -->
+            <a href="#">
+                <img src="assets/logos/logo1.png" alt="" width="150px">
+            </a>
+
+            <!-- Barra de pesquisa -->
+            <form class="d-flex barra-de-pesquisa" id="formBusca">
+                <input class="form-control me-2" type="text" placeholder="Pesquisar" id="barraPesquisa">
+                <button class="btn bg-light" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+
+            <!--MENU HAMBURGUER -->
+            <div class="mobile-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="login.html" class="perfil">Entrar</a></li>
+                <!-- Icone do carrinho -->
+                <li><a href="carrinho.html" class="carrinho"><i class="bi bi-cart2"></i></a></li>
+                <!-- Icone usuário -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="suaConta.html">Seu perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Sair...</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- banners promocionais -->
+        <div class="banner">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicadores do carrossel-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Banner promocionais -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/banners/banner-promocionais/banner1.png" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/banners/banner-promocionais/banner2.png" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/banners/banner-promocionais/banner3.png" alt="New York" class="d-block w-100">
+                </div>
+            </div> 
+
+            <!-- controles do carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+        </div> 
+        <!-- Categorias -->
+        <nav class="navbar navbar-expand-sm navbar-dark categorias2">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown mx-4 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Esportes</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Esportes</h6>
+                                <a class="dropdown-item" href="#">Corrida</a>
+                                <a class="dropdown-item" href="#">Academia</a>
+                                <a class="dropdown-item">Futebol</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Vôlei</a>
+                                <a href="#" class="dropdown-item">Basquete</a>
+                                <a href="#" class="dropdown-item">Tennis</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Artes Marciais</a>
+                                <a href="#" class="dropdown-item">Ciclismo</a>
+                            </div>
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Feminino</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Roupas</h6>
+                                <a class="dropdown-item" href="#">Agasalhos</a>
+                                <a class="dropdown-item" href="#">Bermudas</a>
+                                <a class="dropdown-item">Camisetas</a>
+                                <a href="#" class="dropdown-item">Camisas de Times</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Body Fitness</a>
+                                <a href="#" class="dropdown-item">Calças Legging</a>
+                                <a href="#" class="dropdown-item">Top Fitness</a>
+                                <a href="#" class="dropdown-item">Short Saia</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Moletons e Jaquetas</a>
+                                <a href="#" class="dropdown-item">Meias</a>
+                            </div>
+        
+                            <div class="col-6 col-md-3">
+                                <br>
+                                    <h6 class="dropdown-header text-danger">Calçados</h6>
+                                <a href="#" class="dropdown-item">Chinelos</a>
+                                <a href="#" class="dropdown-item">Tenis</a>
+                                <a href="#" class="dropdown-item">Tênis para Academia</a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <br><br>
+                                <a href="#" class="dropdown-item">Tênis para Corrida</a>
+                                <a href="#" class="dropdown-item">Botas</a>
+                            </div>
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Masculino</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Roupas</h6>
+                                <a class="dropdown-item" href="#">Agasalhos</a>
+                                <a class="dropdown-item" href="#">Bermudas</a>
+                                <a class="dropdown-item">Camisetas</a>
+                                <a href="#" class="dropdown-item">Camisas de Times</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Calças</a>
+                                <a href="#" class="dropdown-item">Calções e Shorts</a>
+                                <a href="#" class="dropdown-item">Camisas de Compressão</a>
+                                <a href="#" class="dropdown-item">Camisas Polo</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Corta vento</a>
+                                <a href="#" class="dropdown-item">Cuecas Boxer e Slip</a>
+                                <a href="#" class="dropdown-item">Meias</a>
+                                <a href="#" class="dropdown-item">Moletons e Jaquetas</a>
+                            </div>
+        
+                            <div class="col-6 col-md-3">
+                                <br>
+                                    <h6 class="dropdown-header text-danger">Calçados</h6>
+                                <a href="#" class="dropdown-item">Botas de Trilha</a>
+                                <a href="#" class="dropdown-item">Chinelos</a>
+                                <a href="#" class="dropdown-item">Chuteiras Society</a>
+                                <a href="#" class="dropdown-item">Chuteiras Futsal</a>
+                                <a href="#" class="dropdown-item">Chuteiras Campo</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br><br>
+                                <a href="#" class="dropdown-item">Tênis</a>
+                                <a href="#" class="dropdown-item">Tênis de Basquete</a>
+                                <a href="#" class="dropdown-item">Tênis para Caminhada</a>
+                                <a href="#" class="dropdown-item">Tênis para Corrida</a>
+                                <a href="#" class="dropdown-item">Tênis Skate</a>
+                            </div>
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Infantil</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <h6 class="dropdown-header text-danger">Infantil</h6>
+                                <a class="dropdown-item" href="#">Camisas de Time</a>
+                                <a class="dropdown-item" href="#">Meias</a>
+                                <a class="dropdown-item" href="#">Conjuntos</a>
+                                <a class="dropdown-item">Kimonos</a>
+                                <a href="#" class="dropdown-item">Agasalhos</a>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <br>
+                                <a href="#" class="dropdown-item">Crocs Infantil</a>
+                                <a href="#" class="dropdown-item">Chinelos e Sandálias</a>
+                                <a href="#" class="dropdown-item">Chuteiras</a>
+                                <a href="#" class="dropdown-item">Tênis All Star</a>
+                                <a href="#" class="dropdown-item">Olympikus</a>
+                            </div>
+        
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Vestuário</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Vestuário</h6>
+                                <a class="dropdown-item" href="#">Agasalhos</a>
+                                <a class="dropdown-item" href="#">Bermudas</a>
+                                <a class="dropdown-item" href="#">Calças</a>
+                                <a class="dropdown-item">Calças Térmicas</a>
+                                <a href="#" class="dropdown-item">Calções</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Camisas de Compressão</a>
+                                <a href="#" class="dropdown-item">Camisas de Time</a>
+                                <a href="#" class="dropdown-item">Camisas Polo</a>
+                                <a href="#" class="dropdown-item">Camisas Térmicas</a>
+                                <a href="#" class="dropdown-item">Camisetas</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Camisetas de Basquete</a>
+                                <a href="#" class="dropdown-item">Camisetas Regatas</a>
+                                <a href="#" class="dropdown-item">Camisetas Manga Longa</a>
+                                <a href="#" class="dropdown-item">Kimonos</a>
+                                <a href="#" class="dropdown-item">Macacões Fitness</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Maiôs</a>
+                                <a href="#" class="dropdown-item">Meias e Meião</a>
+                                <a href="#" class="dropdown-item">Moletons e Jaquetas</a>
+                                <a href="#" class="dropdown-item">Shorts Nike</a>
+                                <a href="#" class="dropdown-item">Shorts Adidas</a>
+                                <a href="#" class="dropdown-item">Shorts Saia</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Roupas Fitnes</a>
+                                <a href="#" class="dropdown-item">Roupas Casuais</a>
+                                <a href="#" class="dropdown-item">Roupas Correr e Caminhar</a>
+                                <a href="#" class="dropdown-item">Uniformes de Futebol</a>
+                                <a href="#" class="dropdown-item">Roupas de Surfe</a>
+                                <a href="#" class="dropdown-item">Roupas de Ciclismo</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Roupas de Natação</a>
+                                <a href="#" class="dropdown-item">Roupas de Praia</a>
+                                <a href="#" class="dropdown-item">Roupas de Goleiro</a>
+                                <a href="#" class="dropdown-item">Roupas Plus Size</a>
+                            </div>
+        
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                    <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Calçados</a>
+                    <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Calçados</h6>
+                                <a class="dropdown-item" href="#">Botas</a>
+                                <a class="dropdown-item" href="#">Botas de trilha</a>
+                                <a class="dropdown-item" href="#">Chinelos</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a class="dropdown-item" href="#">Chinelos Slide</a>
+                                <a class="dropdown-item" href="#">Chuteiras</a>
+                                <a class="dropdown-item" href="#">Tênis</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a class="dropdown-item" href="#">Tênis para corrida</a>
+                                <a class="dropdown-item" href="#">Tênis para Basquete</a>
+                                <a class="dropdown-item" href="#">Tênis para Acadêmia</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a class="dropdown-item" href="#">Meias</a>
+                                <a class="dropdown-item" href="#">Meião</a>
+                                <a class="dropdown-item" href="#">Meias sapatilha</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                </li>
+                <li class="nav-item dropdown mx-5 position-static">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Acessórios</a>
+                <div class="dropdown-menu w-100 mt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <h6 class="dropdown-header text-danger">Acessórios</h6>
+                                <a class="dropdown-item" href="#">Bolas de Pilates</a>
+                                <a class="dropdown-item" href="#">Bonés</a>
+                                <a class="dropdown-item">Luvas para Academia</a>
+                                <a href="#" class="dropdown-item">Malas</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Mochilas</a>
+                                <a href="#" class="dropdown-item">Óculos de Sol</a>
+                                <a href="#" class="dropdown-item">Relógios</a>
+                                <a href="#" class="dropdown-item">Squeezes</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Tapetes de Yoga</a>
+                                <a href="#" class="dropdown-item">Viseiras</a>
+                                <a href="#" class="dropdown-item">Bicicleta</a>
+                                <a href="#" class="dropdown-item">Bolas de Futebol</a>
+                            </div>
+        
+                            <div class="col-6 col-md-3">
+                                <br>
+                                <a href="#" class="dropdown-item">Capacetes</a>
+                                <a href="#" class="dropdown-item">Luvas de Goleiro</a>
+                                <a href="#" class="dropdown-item">Óculos de Natação</a>
+                                <a href="#" class="dropdown-item">Toucas de Natação</a>
+                                <a href="#" class="dropdown-item">Patinetes</a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <br><br>
+                                <a href="#" class="dropdown-item">Patins</a>
+                                <a href="#" class="dropdown-item">Raquetes de Tênis</a>
+                                <a href="#" class="dropdown-item">Bolas de Futebol</a>
+                                <a href="#" class="dropdown-item">Bolas de Vôlei</a>
+                                <a href="#" class="dropdown-item">Monitores Cardíacos</a>
+                                <a href="#" class="dropdown-item">Tênis Skate</a>
+                            </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Cards Produtos -->
+        <div class="todos-os-produtos">
+            <div class="topo">
+                <h2>Todos os produtos</h2>
+                <!-- Filtros de pesquisa -->
+                <div class="caixa-filtro">
+                    <label for="filtro" class="filtro-label">Filtrar por</label>
+                    <select name="filtro" id="filtro" class="filtro-select">
+                        <option value="categoria">Categoria</option>
+                        <option value="nome">A -> Z</option>
+                        <option value="menor-preco">Menor Preço</option>
+                        <option value="maior-preco">Maior Preço</option>
+                    </select>
+                    <button id="limparSeletor" class="btnLimparSeletor" title="Limpar filtro"><i class="bi bi-x"></i></button>
+                </div>
+            </div>
+            <!-- Produtos -->
+            <div class="produtos container my-5 produtosMain">
+                <div class="cards">
+                    <div class="card" data-nome="Bola de Vôlei Penalty Pro" data-categoria="Vôlei" data-preco="169.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod13.png" alt="Bola de Vôlei Penalty Pro">
+                        </div>
+                        <h3>Bola de Vôlei Penalty Pro</h3>
+                        <h6>Costura térmica para maior precisão e durabilidade.</h6>
+                        <p class="preco">R$ 169,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Bola Mikasa Beach" data-categoria="Vôlei" data-preco="1199.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod14.png" alt="Bola de Vôlei Mikasa Beach">
+                        </div>
+                        <h3>Bola Mikasa Beach</h3>
+                        <h6>Textura antiderrapante ideal para jogos ao ar livre.</h6>
+                        <p class="preco">R$ 1199,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Raquete Yonex ArcSaber" data-categoria="Badminton" data-preco="299.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod15.png" alt="Raquete Yonex ArcSaber">
+                        </div>
+                        <h3>Raquete Yonex ArcSaber</h3>
+                        <h6>Equilíbrio perfeito entre velocidade e controle.</h6>
+                        <p class="preco">R$ 299,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Kit Badminton Completo" data-categoria="Badminton" data-preco="149.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod16.png" alt="Kit Badminton Completo">
+                        </div>
+                        <h3>Kit Badminton Completo</h3>
+                        <h6>Para diversão imediata: raquetes leves e petecas inclusas.</h6>
+                        <p class="preco">R$ 149,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Capacete AeroRoad" data-categoria="Ciclismo" data-preco="229.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod17.png" alt="Capacete AeroRoad">
+                        </div>
+                        <h3>Capacete AeroRoad</h3>
+                        <h6>Design aerodinâmico e ventilação tripla.</h6>
+                        <p class="preco">R$ 229,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Luva ShockGrip" data-categoria="Ciclismo" data-preco="69.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod18.png" alt="Luva ShockGrip">
+                        </div>
+                        <h3>Luva ShockGrip</h3>
+                        <h6>Aderência reforçada e acolchoamento anti-impacto.</h6>
+                        <p class="preco">R$ 69,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Joelheira ProShield" data-categoria="Acessórios" data-preco="59.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod19.png" alt="Joelheira ProShield">
+                        </div>
+                        <h3>Joelheira ProShield</h3>
+                        <h6>Compressão firme e material respirável.</h6>
+                        <p class="preco">R$ 59,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Patins Street Pro" data-categoria="Patins" data-preco="399.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod20.png" alt="Patins Street Pro">
+                        </div>
+                        <h3>Patins Street Pro</h3>
+                        <h6>Rodinhas de alta performance e bota acolchoada.</h6>
+                        <p class="preco">R$ 399,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Meias Compress 3-Pack" data-categoria="Acessórios" data-preco="59.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod9.png" alt="Meias Compress 3-Pack">
+                        </div>
+                        <h3>Meias Compress 3-Pack</h3>
+                        <h6>Suporte para arco plantar e tecido antibacteriano.</h6>
+                        <p class="preco">R$ 59,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Óculos Natação Pro" data-categoria="Natação" data-preco="99.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod10.png" alt="Óculos Natação Pro">
+                        </div>
+                        <h3>Óculos Natação Pro</h3>
+                        <h6>Lentes antifog e ajuste suave para conforto em longas sessões.</h6>
+                        <p class="preco">R$ 99,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Corda de Pular Speed" data-categoria="Fitness" data-preco="49.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod11.png" alt="Corda de Pular Speed">
+                        </div>
+                        <h3>Corda de Pular Speed</h3>
+                        <h6>Cabos em aço revestido e rolamentos para giro preciso.</h6>
+                        <p class="preco">R$ 49,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Capacete Skate Pro" data-categoria="Skate" data-preco="239.00">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod12.png" alt="Capacete Skate Pro">
+                        </div>
+                        <h3>Capacete Skate Pro</h3>
+                        <h6>Casco rígido e interior com forro removível para lavagem.</h6>
+                        <p class="preco">R$ 239,00</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Kit Beach Tennis Pro" data-categoria="Beach Tennis" data-preco="349.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod29.png" alt="Kit Beach Tennis Pro">
+                        </div>
+                        <h3>Kit Beach Tennis Pro</h3>
+                        <h6>Raquete leve + bola soft + capa térmica.</h6>
+                        <p class="preco">R$ 349,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Raquete Carbon Beach" data-categoria="Beach Tennis" data-preco="499.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod30.png" alt="Raquete Carbon Beach">
+                        </div>
+                        <h3>Raquete Carbon Beach</h3>
+                        <h6>Carbono 3K com perfuração otimizada.</h6>
+                        <p class="preco">R$ 499,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Skate Maple Street" data-categoria="Skate" data-preco="999.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod31.png" alt="Skate Maple Street">
+                        </div>
+                        <h3>Skate Maple Street</h3>
+                        <h6>Shape maple canadense com trucks reforçados.</h6>
+                        <p class="preco">R$ 999,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Longboard Cruiser" data-categoria="Skate" data-preco="429.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod32.png" alt="Longboard Cruiser">
+                        </div>
+                        <h3>Longboard Cruiser</h3>
+                        <h6>Ideal para passeios estáveis e confortáveis.</h6>
+                        <p class="preco">R$ 429,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Chuteira Nike Society" data-categoria="Calçado" data-preco="219.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod5.png" alt="Mochila SportPack">
+                        </div>
+                        <h3>Chuteira Nike</h3>
+                        <h6>Chuteira Society Nike Mercurial Vapor 16 Club</h6>
+                        <p class="preco">R$ 219,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Short DryFit" data-categoria="Vestuário" data-preco="89.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod6.png" alt="Short DryFit">
+                        </div>
+                        <h3>Short DryFit</h3>
+                        <h6>Secagem rápida e cintura elástica com cordão.</h6>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Luvas de Treino Pro" data-categoria="Acessórios" data-preco="155.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod7.png" alt="Luvas de Treino Pro">
+                        </div>
+                        <h3>Luvas de Boxe Pro</h3>
+                        <h6>Proteção reforçada para treinos de lutas.</h6>
+                        <p class="preco">R$ 155,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Caneleira Elite" data-categoria="Equipamento" data-preco="129.50">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod8.png" alt="Caneleira Elite">
+                        </div>
+                        <h3>Caneleira Elite</h3>
+                        <h6>Ajuste ergonômico e material antiabrasão para proteção máxima.</h6>
+                        <p class="preco">R$ 129,50</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Camiseta Pro 2025" data-categoria="Vestuário" data-preco="149.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod1.png" alt="Camiseta Pro 2025">
+                        </div>
+                        <h3>Adidas Pro 2025</h3>
+                        <h6>Malha respirável, corte anatômico para treino intenso.</h6>
+                        <p class="preco">R$ 149,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                    <div class="card" data-nome="Tênis Runner X" data-categoria="Calçado" data-preco="329.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod2.png" alt="Tênis Runner X">
+                        </div>
+                        <h3>Tênis Runner X</h3>
+                        <h6>Amortecimento reativo e sola de alta aderência para corrida.</h6>
+                        <p class="preco">R$ 329,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                    <div class="card" data-nome="Bola Futebol Elite" data-categoria="Equipamento" data-preco="199.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod3.png" alt="Bola Futebol Elite">
+                        </div>
+                        <h3>Bola Futebol Elite</h3>
+                        <h6>Costura TPU de alta resistência e voo previsível.</h6>
+                        <p class="preco">R$ 199,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                    <div class="card" data-nome="Raquete Carbon Strike" data-categoria="Raquetes" data-preco="459.00">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod4.png" alt="Raquete Carbon Strike">
+                        </div>
+                        <h3>Raquete Carbon Strike</h3>
+                        <h6>Construção em carbono: leveza e potência para smash.</h6>
+                        <p class="preco">R$ 459,00</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Suporte de Quadra - Vôlei" data-categoria="Acessórios" data-preco="89.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod25.png" alt="Suporte de Quadra - Vôlei">
+                        </div>
+                        <h3>Suporte de Quadra - Vôlei</h3>
+                        <h6>Estrutura leve e fácil montagem para treinos.</h6>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Cordas de Pular Elite" data-categoria="Fitness" data-preco="59.90">
+                        <div class="img-produto"><img src="assets/Loja/produtos/prod26.png" alt="Cordas de Pular Elite"></div>
+                        <h3>Cordas de Pular Elite</h3>
+                        <h6>Rolamentos precisos para ritmo constante.</h6>
+                        <p class="preco">R$ 59,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Squeeze Térmico 800ml" data-categoria="Acessórios" data-preco="49.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod27.png" alt="Squeeze Térmico">
+                        </div>
+                        <h3>Squeeze Térmico 800ml</h3>
+                        <h6>Mantém a temperatura por horas e é anti-vazamento.</h6>
+                        <p class="preco">R$ 49,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Bolsa de Ginásio SportBag" data-categoria="Acessórios" data-preco="159.90">
+                        <div class="img-produto"><img src="assets/Loja/produtos/prod28.png" alt="SportBag"></div>
+                        <h3>SportBag</h3>
+                        <h6>Bolsos isolados e compartimento para tênis.</h6>
+                        <p class="preco">R$ 159,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                </div>                 
+                <div class="cards">
+                    <div class="card" data-nome="Manguito UV Protection" data-categoria="Acessórios" data-preco="39.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod21.png" alt="Manguito UV Protection">
+                        </div>
+                        <h3>Manguito UV Protection</h3>
+                        <h6>FPS 50+ e tecido respirável.</h6>
+                        <p class="preco">R$ 39,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Regata DryFit Pro" data-categoria="Roupas" data-preco="79.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod22.png" alt="Regata DryFit Pro">
+                        </div>
+                        <h3>Regata DryFit Pro</h3>
+                        <h6>Tecido leve e secagem ultrarrápida.</h6>
+                        <p class="preco">R$ 79,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Tênis FlexRun" data-categoria="Calçados" data-preco="249.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod23.png" alt="Tênis FlexRun">
+                        </div>
+                        <h3>Tênis Esportivo FlexRun</h3>
+                        <h6>Solado com amortecimento dinâmico.</h6>
+                        <p class="preco">R$ 249,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Kit Tênis de Mesa Starter" data-categoria="Tennis de Mesa" data-preco="89.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod24.png" alt="Kit Tênis de Mesa Starter">
+                        </div>
+                        <h3>Kit Tênis de Mesa</h3>
+                        <h6>2 raquetes + 3 bolas para iniciantes.</h6>
+                        <p class="preco">R$ 89,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" data-nome="Nadadeiras Flex Speed" data-categoria="Natação" data-preco="129.90">
+                        <div class="img-produto">
+                            <img src="assets/Loja/produtos/prod33.png" alt="Nadadeiras Flex Speed">
+                        </div>
+                        <h3>Nadadeiras Flex Speed</h3>
+                        <h6>Borracha macia com impulso reforçado.</h6>
+                        <p class="preco">R$ 129,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Meia Antiderrapante Pro" data-categoria="Acessórios" data-preco="24.90">
+                        <div class="img-produto"><img src="assets/Loja/produtos/prod34.png" alt="Meia Antiderrapante Pro"></div>
+                        <h3>Meia Antiderrapante Pro</h3>
+                        <h6>Design ergonômico e sola com grip interno.</h6>
+                        <p class="preco">R$ 24,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Short Corrida Ultra" data-categoria="Roupas" data-preco="69.90">
+                        <div class="img-produto"><img src="assets/Loja/produtos/prod35.png" alt="Short Corrida Ultra"></div>
+                        <h3>Short Corrida Ultra</h3>
+                        <h6>Bolsinho interno para chave e tecido leve.</h6>
+                        <p class="preco">R$ 69,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                    <div class="card" data-nome="Rede Tênis de Mesa" data-categoria="Tennis de Mesa" data-preco="49.90">
+                        <div class="img-produto"><img src="assets/Loja/produtos/prod36.png" alt="Rede Tênis de Mesa"></div>
+                        <h3>Rede Tênis de Mesa</h3>
+                        <h6>Fácil encaixe em mesas padrão; material resistente.</h6>
+                        <p class="preco">R$ 49,90</p>
+                        <button class="btn-card"><a href="ver-produto.html">Ver mais</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <img src="assets/logos/logo1.png" alt="" width="150px">
+        <div class="direitos-autorais">
+            <img src="assets/logos/logoIF.png" alt="" width="100px">
+        </div>
+        <p>Tads 2 | &copy;Instituto Federal do Paraná</p>
+        <div class="redes-sociais">
+            <h5>Nossas redes sociais</h5>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-tiktok"></i>
+        </div>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/filtros.js"></script>
+</body>
+</html>

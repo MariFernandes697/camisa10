@@ -1,0 +1,39 @@
+<!--     
+    Fontes:
+    Poppins, sans serif
+
+    Landing page.
+    Menu -  barra de navegação, area do usuario, carrinho, logo, menu suspenso, responsividade.
+    Página Inicial - banner, logo, apresentação da loja, fundo interativo, botão compre agora.
+    Principais Produtos - Cards de produtos interativos (imagem, titulo e preço e classificação), botão ver mais.
+    Nossos clientes - Depoimento de clientes.
+    Rodapé - assinatura da marca, endereço fisico, donos, meios de contato, copywrite, data.
+
+    Loja/shop
+    Menu -  barra de navegação, area do usuario, carrinho, barra de pesquisa, logo, menu suspenso, responsividade.
+    Banner de promoção
+    Aba categorias - Esportes, Lifestyle, Feminino, Masculino, Infantil, Vestuário, Sapatos, Acessórios, etc.
+    Filtros de pesquisa - Tamanho, cor, preço
+    Todos os produtos - Cards com todos os produtos interativos (imagem, titulo e preço e classificação)
+    Rodapé - assinatura da marca, endereço fisico, donos, meios de contato, copywrite, data.
+
+    Ver Produto
+    Menu -  barra de navegação, area do usuario, carrinho, barra de pesquisa, logo, menu suspenso, responsividade.
+    Exposição do produto - foto principal do anuncio e foto alternativa, titulo, descrição detalhada, preço, recomendação, quantidade disponível, tamanhos e cores disponíveis.
+    Botões adicionar ao carrinho e comprar agora.
+    Ver produtos relacionados - titulo e cards de produtos.
+    Rodapé - assinatura da marca, endereço fisico, donos, meios de contato, copywrite, data.
+
+    Carrinho 
+    Menu alternativo - com a logo, area do usuario e barra de navegação reduzida.
+    Exposição dos produtos - foto principal, titulo, descrição breve, preço, quantidade, tamanho e cor.
+    Meios de pagamento - mercado pago, cartão de crédito/débito, pix, cartão presente e parcelas.
+    Data e hora.
+    Botão confirmar pagamento
+    
+    icons bootstrap
+    <i class="bi bi-cart-plus-fill"></i> carrinho
+    <i class="bi bi-person-circle"></i> user
+    <i class="bi bi-eye-fill"></i> say password
+    <i class="bi bi-search"></i> search
+    -->
